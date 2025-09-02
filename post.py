@@ -13,13 +13,13 @@ for line in lines:
 c = 0
 for group in groups:
     if len(group) < 7:
-        # print(f"Answer {group[0]} menos de 6 aburrido")
+        # print(f"Answer {group[0]} less than 6")
         pass
     elif len(group) == 7:
         c += 1
-        print(f"Answer {group[0]} justo 6: {', '.join(group[1:])}")
+        print(f"Answer {group[0]} exactly 6: {', '.join(group[1:])}")
     else:
         c += 1
-        print(f"WTF imposibru {group[0]}: {', '.join(group[1:])}")
+        print(f"WTF {group[0]}: {', '.join(group[1:])}")
 
-print(c)
+print(f"Groups with solutions: {c}")
